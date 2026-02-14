@@ -36,4 +36,9 @@ public class UserDaoImp implements UserDao {
         return query.getResultStream().findFirst().orElse(null);
     }
 
+    @Override
+    public void update(User user) {
+        sessionFactory.getCurrentSession().update(user);
+    }
+
 }
