@@ -1,5 +1,6 @@
-package hiber.dao;
+package hiber.service;
 
+import hiber.dao.CarDao;
 import hiber.model.Car;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
